@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "person": [
+    {
+      "nome": "Anacleto Moser",
+      "email": "anacleto.moser@gmail.com",
+      "whatsapp": "47988236523"
+    },
+    {
+      "nome": "Armelindo Kruger",
+      "email": "armelindo.kruger@gmail.com",
+      "whatsapp": "47988783523"
+    },
+    {
+      "nome": "Edeltraud Schweinsteiger",
+      "email": "edeltraud.schweinsteiger@gmail.com",
+      "whatsapp": "47989656523"
+    },
+    {
+      "nome": "Ingo Weege",
+      "email": "ingo.weege@gmail.com",
+      "whatsapp": "47989656599"
+    },
+    {
+      "nome": "Euclides Fagundes Bueno",
+      "email": "fagundes.bueno@gmail.com",
+      "whatsapp": "47989656579"
+    }
+  ]
+}

@@ -7,17 +7,25 @@ import { AppComponent } from './app.component';
 import { PersonComponent } from './person/person.component';
 
 import { ROUTES } from './app.routes';
+import { HomeComponent } from './home/home.component';
 
-//import {ButtonModule} from 'primeng/button';
+import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
+import { ListPersonComponent } from './person/list-person/list-person.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonComponent,
-    //ButtonModule
+    HomeComponent,
+    //TableModule,
+    ListPersonComponent,
+
   ],
   imports: [
     BrowserModule,
+    ButtonModule,
+    TableModule,
     AppRoutingModule,
     RouterModule.forRoot(ROUTES)
   ],
