@@ -1,3 +1,5 @@
+import { Person } from './../person.model';
+import { PersonService } from './../person.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListPersonComponent implements OnInit {
 
-  constructor() { }
+  person: Person[]
+
+  constructor(private personService: PersonService) { }
 
   ngOnInit(): void {
+    this.personService.listagemPerson()
+      .subscribe(person => this.person = person)
+      console.log(this.person)
   }
+
 
 }

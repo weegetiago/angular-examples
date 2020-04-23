@@ -1,5 +1,8 @@
+import { PersonService } from './person/person.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+//import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,7 +21,6 @@ import { ListPersonComponent } from './person/list-person/list-person.component'
     AppComponent,
     PersonComponent,
     HomeComponent,
-    //TableModule,
     ListPersonComponent,
 
   ],
@@ -26,10 +28,12 @@ import { ListPersonComponent } from './person/list-person/list-person.component'
     BrowserModule,
     ButtonModule,
     TableModule,
+    HttpClientModule,
     AppRoutingModule,
+    //HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [PersonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
