@@ -11,12 +11,14 @@ export class ListPersonComponent implements OnInit {
 
   person: Person[]
 
-  constructor(private personService: PersonService) { }
+  constructor(
+    private personService: PersonService) { }
 
   ngOnInit(): void {
-    this.personService.listagemPerson()
+    this.personService.listPerson()
       .subscribe(person => this.person = person)
       console.log(this.person)
+
   }
 
 

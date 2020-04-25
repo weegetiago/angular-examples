@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 //import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +27,8 @@ import { ListPersonComponent } from './person/list-person/list-person.component'
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    FormsModule,
     ButtonModule,
     TableModule,
     HttpClientModule,

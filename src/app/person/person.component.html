@@ -7,25 +7,25 @@
 </div>
 
 <div class="person-container">
-    <form action="">
+    <form [formGroup]="formPerson">
         <div class="ui-g-12 ui-md-4">
             <div class="ui-inputgroup">
-                <input type="text" pInputText placeholder="Nome">
+                <input type="text" pInputText placeholder="Nome" formControlName="name">
             </div>
         </div>
         <div class="ui-g-12 ui-md-4">
             <div class="ui-inputgroup">
-                <input type="text" pInputText placeholder="E-mail">
+                <input type="text" pInputText placeholder="E-mail" formControlName="email">
             </div>
         </div>
         <div class="ui-g-12 ui-md-4">
             <div class="ui-inputgroup">
-                <input type="text" pInputText placeholder="WhastApp">
+                <input type="text" pInputText placeholder="WhastApp" formControlName="whatsapp">
             </div>
         </div>
         {{''}}
         <div class="row">
-            <p-button label="Cadastrar"></p-button>
+            <p-button label="Cadastrar" [disabled]="!formPerson.valid" (click)="insertPerson()"></p-button>
             {{''}}
             <p-button [routerLink]="['/list-person']" label="Listar"></p-button>
             {{''}}
