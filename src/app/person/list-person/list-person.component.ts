@@ -9,15 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListPersonComponent implements OnInit {
 
-  person: Person[]
+  personList: Person[]
 
   constructor(
     private personService: PersonService) { }
 
   ngOnInit(): void {
     this.personService.listPerson()
-      .subscribe(person => this.person = person)
-      console.log(this.person)
+      .subscribe(person => this.personList = person)
+      console.log(this.personList)
 
   }
 

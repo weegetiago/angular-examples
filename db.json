@@ -16,6 +16,33 @@
   "profile": {
     "name": "typicode"
   },
+  "sku": [
+    {
+      "id": 1,
+      "name": "PC YBR",
+      "price": 5.98
+    },
+    {
+      "id": 2,
+      "name": "Cuia Padrão Uruguay",
+      "price": 58.89
+    },
+    {
+      "id": 3,
+      "name": "Erva Mate Dom Weege",
+      "price": 19.90
+    },
+    {
+      "id": 4,
+      "name": "Assado de tira",
+      "price": 25
+    },
+    {
+      "id": 5,
+      "name": "Grelha campeira",
+      "price": 80.99
+    }
+  ],
   "person": [
     {
       "name": "Anacleto Moser",
@@ -106,6 +133,12 @@
       "email": "silveira@silveira.net",
       "whatsapp": "77898798989",
       "id": 15
+    },
+    {
+      "name": "Ane Beyer",
+      "email": "ane@ane.net",
+      "whatsapp": "47956233268",
+      "id": 16
     }
   ]
 }

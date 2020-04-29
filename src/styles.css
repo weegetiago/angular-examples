@@ -27,7 +27,7 @@
   }
 
   .toolbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -38,6 +38,20 @@
     color: white;
     font-weight: 600;
   }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    height: 30px;
+    bottom: 0;
+    justify-content: flex-end;
+    color: white;
+    background-color: #1976d2;
+    align-items: center;
+}
 
   .toolbar img {
     margin: 0 16px;
