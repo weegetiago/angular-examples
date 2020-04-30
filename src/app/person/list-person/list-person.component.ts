@@ -18,8 +18,19 @@ export class ListPersonComponent implements OnInit {
     this.personService.listPerson()
       .subscribe(person => this.personList = person)
       console.log(this.personList)
-
   }
 
+  deletePerson(id: string){
+    this.personService.deletePerson(id)
+    .subscribe(response => {
+      alert('Cadastro deletado com sucesso')
+      this.refreshPage()
+    })
+  };
+
+  refreshPage(){
+    this.personService.listPerson()
+      .subscribe(person => this.personList = person)
+  };
 
 }

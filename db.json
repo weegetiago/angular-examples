@@ -30,7 +30,7 @@
     {
       "id": 3,
       "name": "Erva Mate Dom Weege",
-      "price": 19.90
+      "price": 19.9
     },
     {
       "id": 4,
@@ -81,12 +81,6 @@
       "id": 6
     },
     {
-      "name": "Edeltraud Bueno Neto",
-      "email": "neto.bueno@gmail.com",
-      "whatsapp": "47988966579",
-      "id": 7
-    },
-    {
       "name": "Kruger Bueno Neto",
       "email": "nueno.bueno.net@gmail.com",
       "whatsapp": "47988961239",
@@ -105,12 +99,6 @@
       "id": 10
     },
     {
-      "name": "insert no BD",
-      "email": "scarpelli@scarpelli.net",
-      "whatsapp": "47988885522",
-      "id": 11
-    },
-    {
       "name": "Tolibalder Klemente",
       "email": "klementao@gmail.com",
       "whatsapp": "47988552233",
@@ -123,12 +111,6 @@
       "id": 13
     },
     {
-      "name": "Babilu",
-      "email": "babilu@gmail.com",
-      "whatsapp": "11111111111",
-      "id": 14
-    },
-    {
       "name": "Helena da Silveira",
       "email": "silveira@silveira.net",
       "whatsapp": "77898798989",
@@ -139,6 +121,12 @@
       "email": "ane@ane.net",
       "whatsapp": "47956233268",
       "id": 16
+    },
+    {
+      "name": "Cristiane Beyer Spiess",
+      "email": "cristianebspiess@gmail.com",
+      "whatsapp": "64664646464",
+      "id": 17
     }
   ]
 }

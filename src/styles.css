@@ -39,6 +39,10 @@
     font-weight: 600;
   }
 
+  .icons {
+    color: black;
+  }
+
   .footer {
     position: fixed;
     left: 0;

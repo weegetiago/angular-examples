@@ -8,11 +8,22 @@
                     <th>NOME</th>
                     <th>E-MAIL</th>
                     <th>WHATSAPP</th>
+                    <th>AÇÕES</th>
                 </tr>
                 <tr *ngFor="let person of personList">
                     <th>{{person.name}}</th>
                     <th>{{person.email}}</th>
                     <th>{{person.whatsapp}}</th>
+                    <th>
+                        <a [routerLink]="['/list-person']">
+                            <i class="pi pi-times icons"
+                            (click)="deletePerson(person.id)"></i>
+                        </a>
+                        {{''}}
+                        <a [routerLink]="['']">
+                            <i class="pi pi-pencil icons"></i>
+                        </a>
+                    </th>
                 </tr>
             </ng-template>
         </p-table>
