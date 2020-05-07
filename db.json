@@ -87,12 +87,6 @@
       "id": 8
     },
     {
-      "name": "Tiago Weege",
-      "email": "weegetiago@gmail.com",
-      "whatsapp": "47988038397",
-      "id": 9
-    },
-    {
       "name": "Orlando Scarpelli",
       "email": "scarpelli@scarpelli.net",
       "whatsapp": "47988885522",
@@ -123,10 +117,16 @@
       "id": 16
     },
     {
-      "name": "Cristiane Beyer Spiess",
-      "email": "cristianebspiess@gmail.com",
-      "whatsapp": "64664646464",
-      "id": 17
+      "name": "Tiago Weege",
+      "email": "weegetiago@gmail.com",
+      "whatsapp": "64646454646546",
+      "id": 19
+    },
+    {
+      "name": "Tiago Weege",
+      "email": "weegetiago@gmail.com",
+      "whatsapp": "64646454646546",
+      "id": 20
     }
   ]
 }

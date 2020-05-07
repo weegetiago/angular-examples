@@ -14,6 +14,7 @@ export class PersonComponent implements OnInit {
   whatsappPattern = /^[0-9]*$/
   emailPattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
   formPerson: FormGroup
+  personList: Person[]
 
   constructor(
     private http: HttpClient,
@@ -36,7 +37,8 @@ export class PersonComponent implements OnInit {
     };
     this.personService.insertPerson(person)
     .subscribe(response => {
-      alert(`Cadastro efetuado com sucesso`)
+      alert(`Cadastro efetuado com sucesso: ${response.name}`)
+      this.ngOnInit()
     })
   };
 

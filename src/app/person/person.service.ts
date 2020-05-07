@@ -19,8 +19,16 @@ export class PersonService {
     return this.http.post<Person>(`${API}/person`, person,)
   }
 
-  deletePerson(id: string): Observable<Person>{
-    return this.http.delete<Person>(`${API}/person/${id}`)
+  deletePerson(id: string) {
+    return this.http.delete(`${API}/person/${id}`)
+  }
+
+  updatePerson(id: string) {
+    return this.http.delete(`${API}/person/${id}`)
+  }
+
+  listPersonById(id: string): Observable<Person[]> {
+    return this.http.get<Person[]>(`${API}/person/${id}`)
   }
 
 }

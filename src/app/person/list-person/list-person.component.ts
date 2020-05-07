@@ -9,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListPersonComponent implements OnInit {
 
-  personList: Person[]
+  personList: Person[];
+  public person: any;
 
   constructor(
     private personService: PersonService) { }
@@ -27,6 +28,11 @@ export class ListPersonComponent implements OnInit {
       this.refreshPage()
     })
   };
+
+  listPersonById(id: string){
+    this.personService.listPersonById(id)
+    .subscribe(response => this.person = response)
+  }
 
   refreshPage(){
     this.personService.listPerson()

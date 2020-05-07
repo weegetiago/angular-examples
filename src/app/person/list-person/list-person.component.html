@@ -20,8 +20,9 @@
                             (click)="deletePerson(person.id)"></i>
                         </a>
                         {{''}}
-                        <a [routerLink]="['']">
-                            <i class="pi pi-pencil icons"></i>
+                        <a routerLink="edit-person/{{person.id}}">
+                            <i class="pi pi-pencil icons"
+                            (click)="listPersonById(person.id)"></i>
                         </a>
                     </th>
                 </tr>

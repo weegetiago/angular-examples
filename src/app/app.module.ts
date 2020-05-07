@@ -14,9 +14,12 @@ import { HomeComponent } from './home/home.component';
 
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
+import {DialogModule} from 'primeng/dialog';
 import { ListPersonComponent } from './person/list-person/list-person.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { PersonModalDeleteComponent } from './person/person-modal-delete/person-modal-delete.component';
+import { EditPersonComponent } from './person/edit-person/edit-person.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     ListPersonComponent,
     HeaderComponent,
     FooterComponent,
+    PersonModalDeleteComponent,
+    EditPersonComponent,
 
   ],
   imports: [
@@ -34,6 +39,7 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     ButtonModule,
     TableModule,
+    DialogModule,
     HttpClientModule,
     AppRoutingModule,
     RouterModule.forRoot(ROUTES)

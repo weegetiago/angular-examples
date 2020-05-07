@@ -1,0 +1,33 @@
+<app-header></app-header>
+
+<div class="person-container">
+    <form [formGroup]="formPerson">
+        <div class="ui-g-12 ui-md-4">
+            <div class="ui-inputgroup">               
+                <input  type="text" pInputText [(ngModel)]="person.name" placeholder="Nome" formControlName="name">
+            </div>
+        </div>
+        <div class="ui-g-12 ui-md-5">
+            <div class="ui-inputgroup">
+                <input type="text" pInputText [(ngModel)]="person.email" placeholder="E-mail" formControlName="email">
+            </div>
+        </div>
+        <div class="ui-g-12 ui-md-3">
+            <div class="ui-inputgroup">
+                <input type="text" pInputText  [(ngModel)]="person.whatsapp" placeholder="WhastApp" formControlName="whatsapp">
+            </div>
+        </div>
+        {{''}}
+        <div class="row">
+            <p-button label="Atualizar" [disabled]="!formPerson.valid" 
+            (click)="updatePerson()"></p-button>
+            {{''}}
+            <p-button [routerLink]="['/list-person']" label="Voltar"></p-button>
+            {{''}}
+            <p-button (click)="deletePerson(person.id)" [routerLink]="['/list-person']" 
+            label="Deletar"></p-button>
+        </div>
+    </form>
+</div>
+
+<app-footer></app-footer>
